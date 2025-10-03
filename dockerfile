@@ -1,6 +1,6 @@
 FROM python:3.13-slim
 
-WORKDIR C:\Users\Mega Computers\PycharmProjects\Backendpythonprogramming\Day22
+WORKDIR .
 
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
