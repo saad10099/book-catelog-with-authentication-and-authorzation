@@ -141,5 +141,3 @@ def login(form_data:OAuth2PasswordRequestForm = Depends()):
 @app.get("/user",tags=["User and Token."])
 def get_user(username:str = Depends(verify_token)):
     return {f"welcome {username}! You are logged in as {username}"}
-
-
